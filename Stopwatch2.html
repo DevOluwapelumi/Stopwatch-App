@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+     <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+     <link rel="stylesheet" href="./Stopwatch2.css">
+</head>
+<body style=" background: linear-gradient(to right,purple,pink,orange, #0c4655, #7fb3c0, red, black, yellow, green) ">
+    <!-- <div class="" style="border: 3px solid blue;"></div> -->
+    <div class="container">
+        <div class="row">
+            <div class="contain col-6 mx-auto mt-3">
+                <div class="d-flex justify-content-around mt-5">
+                    <input class="compress" disabled type="number" placeholder="00" id="hh">
+                    <input class="compress" disabled type="number" placeholder="00" id="mm">
+                    <input class="compress" disabled type="number" placeholder="00" id="ss">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex" id="disp">
+                            <button class="btn btn-success my-5" onclick="startBut()">Start</button>
+                            <button class="btn btn-danger my-5" onclick="pauseBut()">Pause</button>
+                            <button class="btn btn-warning my-5" onclick="resetBut()">Reset</button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+   
+   
+        
+     
+    <script>
+        const startBut = ()=> {
+            ss.value++
+            myTimer = setTimeout(startBut, 10)
+            if(ss.value == 100){
+            mm.value++
+            ss.value=0
+        }
+        else if(mm.value==59){
+            hh.value++
+            mm.value=0
+        }
+        console.log(ss.value)
+        // disp.innerHTML = ` 
+        // <button class="btn btn-danger my-5" onclick="pauseBut()">Pause</button>
+        // <button class="btn btn-warning my-5" onclick="resetBut()">Reset</button>
+        //  `
+    }
+    const pauseBut = () => {
+        clearTimeout(myTimer)
+        // disp.innerHTML = `
+        // <button class="btn btn-danger my-5" onclick="startBut()">Continue</button>
+        // <button class="btn btn-warning my-5" onclick="resetBut()">Reset</button>
+        //  `
+
+    }
+    const resetBut =() =>{
+        ss.value=""
+        mm.value=""
+        hh.value=""
+        startBut()
+
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5ae29e !important;
+}
+.contain{
+    margin-top: 200px !important;
+    border-radius: 10px;
+    box-shadow: 0 0 15px;
+    border: none;
+    background-image: linear-gradient(#13edf5, #5ae29e);
+}
+.compress{
+    border: none;
+    width: 6pc !important;
+    height: 5pc;
+    text-indent: 1px;
+    font-size: 400% !important;
+    font-weight: 700;
+    background-image: linear-gradient(#13edf5, #1ee5ec);
+    margin-bottom: 3pc !important;
+}
+button{
+    height: 3pc;
+    box-shadow: 0 0 10px;
+    font-size: 20px !important;
+    width: 6pc !important;
+    margin: 3pc !important;
+}
