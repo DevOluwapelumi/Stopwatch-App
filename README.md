@@ -1,5 +1,5 @@
 # Stopwatch-App
-This Stopwatch was created with HTML, CSS and JAVASCRIPT only...
+This Stopwatch was created with HTML, CSS, and JAVASCRIPT only...
 
 
 A Stopwatch App is a digital application designed to function as a timer that measures the elapsed time between its start and stop functions. It's a convenient tool commonly used for various purposes, such as timing athletic activities, tracking work tasks, measuring cooking durations, and more. Here's a general description of a Stopwatch App's features and functionality:
